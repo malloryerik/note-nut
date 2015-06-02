@@ -1,0 +1,96 @@
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Note Nut</title>
+</head>
+
+<body>
+</body>
+<!--  -->
+<template name="layout1">
+    {{> Template.dynamic template=top}}
+    <!-- Bootstrap container... if we'd put the container around individual templates, they couldn't be nested.-->
+    <div class="container-fluid">
+	{{> Template.dynamic template=main}}
+    </div>
+</template>
+<!--  -->
+<template name="layoutSimple">
+    <div class="container-fluid">
+	{{> Template.dynamic template=main}}
+    </div>
+</template>
+
+
+<!--  -->
+<template name="greeting">
+    <div class="panel panel-default">
+	<div class="panel-body">
+	    Add a note
+	    <textarea class="form-control" rows="3" value=""></textarea>
+	    <button class="btn btn-default btn-sm btn-block saveNote" type="submit">Save</button>
+	</div>
+    </div>
+</template>
+<!--  -->
+
+<!--  -->
+<!--  -->
+
+<template name="addNote">
+    <!-- <div class="addNewNoteBtn white">
+      <span>  + Add a new note</span>
+      </div> -->
+    <div class="btn-group btn-group-justified" role="group" aria-label="...">
+	<div class="btn-group btn-group-xs" role="group">
+            <button type="button" class="btn btn-default" >Search my Notes</button>
+	</div>
+	<!-- <div class="btn-group btn-group-xs" role="group">
+	  <button type="button" class="btn btn-default">Middle</button>
+	  </div> -->
+	<div class="btn-group btn-group-xs" role="group">
+            <button type="button" class="btn btn-default" id="addNewNoteBtn" >Add a New Note</button>
+	</div>
+    </div>
+</template>
+<!--  -->
+
+<template name="share">
+
+    {{#each members}}
+    <p>hi</p>
+    {{/each}}
+</template>
+
+<template name="tasks">
+    This is tasks area
+    {{#each tasknotes}}
+    hi
+    {{/each}}
+</template>
+<!--  -->
+<template name="tasklist">
+
+</template>
+
+<template name="grids">
+    <div class="gridster">
+        <ul>
+            <li data-row="1" data-col="1" data-sizex="1" data-sizey="1"></li>
+            <li data-row="2" data-col="1" data-sizex="1" data-sizey="1"></li>
+            <li data-row="3" data-col="1" data-sizex="1" data-sizey="1"></li>
+
+            <li data-row="1" data-col="2" data-sizex="2" data-sizey="1"></li>
+            <li data-row="2" data-col="2" data-sizex="2" data-sizey="2"></li>
+
+            <li data-row="1" data-col="4" data-sizex="1" data-sizey="1"></li>
+            <li data-row="2" data-col="4" data-sizex="2" data-sizey="1"></li>
+            <li data-row="3" data-col="4" data-sizex="1" data-sizey="1"></li>
+
+            <li data-row="1" data-col="5" data-sizex="1" data-sizey="1"></li>
+            <li data-row="3" data-col="5" data-sizex="1" data-sizey="1"></li>
+
+            <li data-row="1" data-col="6" data-sizex="1" data-sizey="1"></li>
+            <li data-row="2" data-col="6" data-sizex="1" data-sizey="2"></li>
+	</ul>
+    </div>
+</template>

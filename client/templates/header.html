@@ -1,0 +1,17 @@
+<!-- no associated JS yet -->
+
+<template name="header">
+        <nav class="navbar navbar-default nut-nav">
+	    <div class="container-fluid">
+	        <!-- Brand and toggle get grouped for better mobile display -->
+	        <div class=" nut-nav">
+
+		    <a class="navbar-brand " href=""><span class="logo homeButton">nN</span></a>
+	    </div>
+	    {{#unless currentUser}}
+	    {{>loginButtons}}
+	    {{/unless}}
+
+	</div><!-- /.container-fluid -->
+    </nav>
+</template>

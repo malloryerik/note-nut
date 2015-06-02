@@ -1,0 +1,31 @@
+<template name="editor">
+    <div class="panel panel-default">
+	<div class="panel-body misty">
+	    <div class="expandingArea"> <!--  -->
+		<pre><span></span><br></pre> <!-- this is a "mirror" for our expanding textarea -->
+		<textarea id= "noteEditArea" placeholder="#noteEditArea" autofocus="true"></textarea>
+	    </div>
+	</div>
+
+	<!-- justified button group -->
+	<div class="btn-group btn-group-justified" role="group" aria-label="...">
+	    <div class="btn-group" role="group">
+		<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+		    Dropdown
+		    <span class="caret"></span>
+		</button>
+		<ul class="dropdown-menu" role="menu">
+		    <li><a>Dropdown link</a></li>
+		    <li><a href="">Dropdown link</a></li>
+		</ul>
+	    </div>
+	    <div class="btn-group" role="group">
+		<button type="button" class="btn btn-default" id="saveNote">{{nutAction}} Save Nut Now</button>
+	    </div>
+	</div>
+    </div>
+
+    <!-- Showing the current "short memory" ... consider saving as a draft if not sent or shared. -->
+
+    <div style="color: snow; font-weight: 100"><small>{{myShortMem}}</small></div>
+</template>

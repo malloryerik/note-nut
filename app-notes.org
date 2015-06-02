@@ -1,0 +1,68 @@
+
+
+Friends. Share notes with friends. Permissions. Editing rights.
+Tags for notes. 
+
+
+Add animation to show deletion of notes.
+
+** UI generally:
+
+*** autosave
+    To autosave notes:
+    Throttle for 1000, 1 second, or maybe 2. Save after no input for a certain amount of time.
+
+Then, hit save to share.
+
+Will require a new something... maybe it can all be handled in a Session.
+
+Important to only save after the button's hit to avoid mis-communication.
+
+Focus on the area allows a write.
+
+** search (first just Mongo $text, fallback to RegEx)
+First try full-text search in Mongo. Then see about Elastic.
+
+
+** Loading screen or something like that
+   
+** animation for delete
+
+**** 
+gingko : n3ng!ny30n
+
+** TODO [#B] 
+  + search
+    tags
+    dates / moment?
+    pomodoro / timer
+
+    
+
+  jja :: sdfg
+
+  ::: 
+
+
+       
+** Lord of the Rings
+   My fav scenes so far
+   1. the attack
+   2. Eowyn's fight
+      + fave in book
+      + Miranda
+   Important scene
+   - Elijah :: Plays Frodo
+   - Sean :: Sam
+   - lkj :: ljlk
+
+** Farewell
+   So so 
+   1. [ ] asfasfasdfasdfasdf  asdf
+   2. [ ] search
+   3. asdf
+   4. asdf  a sdf
+   5. asdf
+      1) 
+
+

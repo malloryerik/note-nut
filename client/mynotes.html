@@ -1,0 +1,27 @@
+<template name="myNotes">
+    {{> addNote}}
+    <div class="dissolver">hi bye</div>
+    <hr>
+    {{#each nutworks}}
+    <!-- Meta data like the date can grow larger when touched -->
+    <div class="noteBox">
+	<span><small>by {{currentUser.username}}</small>  </span>
+
+	<span class="noteDate" style="color: snow;
+	      font-weight: 100; font-size: 0.7em">{{createdAt}}</span>
+	<div class="panel panel default">
+	    <div class="panel-body" style="background-color: white;">
+	        <!-- Here's the text. -->
+	        <div style="white-space: pre-wrap; background-color: white;" >{{text}}</div>
+	    </div>
+	    <span class="deleteMe"><a href="">[X]</a></span>
+	    <span class="editMe"><a href="">[Share]</a></span>
+	</div>
+    </div>
+    <hr>
+
+    {{/each}}
+    <!-- {{#each tomatoes}} -->
+    <span>There's a tomato.</span>
+    <!-- {{/each}} -->
+</template>
